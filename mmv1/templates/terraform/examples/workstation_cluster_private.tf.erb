@@ -7,6 +7,7 @@ resource "google_workstations_workstation_cluster" "<%= ctx[:primary_resource_id
 
   private_cluster_config {
     enable_private_endpoint = true
+    allowed_projects = ["allowed-project-id"]
   }
 
   labels = {
